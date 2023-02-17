@@ -638,7 +638,18 @@ console.log(e)
 //     alert("false")
 // }
 
+//  QUESTION NO 5
 
+// let myCurrentPassword = "Password123"
+// let userEnterPassword = prompt("Enter A Current Password")
+
+// if (!userEnterPassword) {
+//     alert("Please Correct Password")
+// } else if (myCurrentPassword == userEnterPassword) {
+//     alert("Thank You For Current Passsword")
+// } else {
+//     alert("INCORRECT PASSWORD")
+// }
 
 
 
@@ -661,8 +672,6 @@ console.log(e)
 
 //  Question 6
 
-
-
 // var greeting;
 // var hour = Number(prompt("type"));
 // if (hour < 18) {
@@ -670,4 +679,332 @@ console.log(e)
 // } else {
 // alert(greeting = "Good evening" );
 // }
+
+//  CHAPTER 14 AND 15 ARRAY
+
+// Question NO 1
+
+// let studentNames = [];
+
+//   Question NO 2
+
+// let EmptyArray = {
+//     studetName : []
+// }
+
+//  Question NO 3 4 5 6
+
+// let student = []
+// let studentName = ["Student", 4, true, student];
+
+
+//  Question NO 7
+
+// let education = [
+//     "SSC",
+//     " HSC",
+//     "BCS",
+//     "B.COM",
+//     "MS",
+//     "M.Phil",
+//     "PhD"];
+
+// document.write(education)
+
+
+//  Question 8
+
+// let studentNames3 = ["Michael", "John", "Tony"]
+
+// let numbers = [320, 230, 480]
+
+
+// let studentPercentages = []
+
+// for (let i = 0; i < numbers.length; i++) {
+//     let percentage = (numbers[i] / 500) * 100;
+//     studentPercentages.push(percentage);
+// }
+
+// for (let i = 0; i < studentNames3.length; i++) {
+//     console.log(studentNames3[i] + ": Score = " + numbers[i] + ", Percentage = " + studentPercentages[i] + "%");
+// }
+
+//  FUNCTION 35 TO 38 CHAPTER
+
+//  QUESTION NO 1
+
+
+// function currentTime(){
+//     let dateTime = new Date();
+//     let dateTimeString = dateTime.toLocaleString();
+//     alert(`The current date and time is ${dateTimeString}`)
+// }
+// currentTime()
+
+
+//  QUESTION NO 2
+
+// function myfunction() {
+//     let firstName = prompt("Type first name")
+//     let lastName = prompt("Type last name")
+//     alert(" HELLO SIR")
+
+// }
+// myfunction()
+
+// function greetUser(firstName, lastName) {
+//     const fullName = `${firstName} ${lastName}`;
+//     console.log(`Hello, ${fullName}!`);
+//   }
+
+// greetUser("hello", "iam")
+
+
+//  QUESTION NO 3
+
+// let a = +prompt("type number")
+// let b = +prompt( " type number")
+
+// function addsNumber(a,b)
+// {
+//     console.log(a + b)
+// }
+// addsNumber(a,b)
+
+
+//  QUESTION 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  QUESTION NO 5
+// let num = +prompt(" Type Number For Square")
+
+// function square(num) {
+//     return num ** 2
+// }
+// document.write(square(num))
+
+
+
+//  QUESTION NO 6
+
+// function factorial(n){
+//     let result = 1;
+//     for (let i = 1; i <= n; i++){
+//         result *=i
+//     }
+//     return result
+// }
+
+// let n = +prompt("Type A Number");
+// document.write(factorial(n))
+
+//  Question no 7
+// function count(start, end) {
+//     for (let i = start; i <= end; i++) {
+//         document.write(i + "<br>");
+//     }
+// }
+
+//  count(20 , 30)
+
+
+//  QUESTION NO 8
+
+// function calculateHypotenus(base, perpendicular) {
+//     function square(number) {
+//         return number * number
+//     }
+//     var hypoteuse = Math.sqrt(square(base) + square(perpendicular));
+//     return hypoteuse;
+// }
+
+// let a = +prompt("Type A Number");
+// let b = +prompt("Type A Number");
+// let c = calculateHypotenus(a, b);
+// document.write(c)
+
+
+//  QUESTION NO 9
+
+// function calculateAresWithValue(width, height) {
+//     return width * height
+// }
+
+// function calculateAresWithVariabes() {
+//     var width = arguments[0];
+//     var height = arguments[1];
+//     return width * height
+// }
+
+// var area1 = calculateAresWithValue(5, 10);
+// // console.log(area1)
+
+
+// var width = 6;
+// var height = 8;
+// var area2 = calculateAresWithVariabes(width, height);
+// console.log(area2)
+
+
+
+
+
+// QUESTION NO 10
+
+
+
+
+
+
+//  QUESTION NO 11
+
+// function capitalizeFirstLetter(str) {
+//     var words = str.split(" ");
+//     for (var i = 0; i < words.length; i++) {
+//       var word = words[i];
+//       words[i] = word.charAt(0).toUpperCase() + word.slice(1);
+//     }
+//     return words.join(" ");
+//   }
+
+//   // Example usage:
+//   var str = prompt("type");
+//   var capitalizedStr = capitalizeFirstLetter(str);
+//   console.log(capitalizedStr);
+// output: 'The Quick Brown Fox'
+
+
+
+//  QUESTION NO 12
+
+// function findString(str) {
+
+//     let word = str.split(' ')
+
+//     let longgestWord = ' ';
+
+//     for (let i = 0; i < word.length; i++) {
+//         if (word[i].length > longgestWord.length) {
+//             longgestWord = word[i]
+//         }
+//     }
+//     return longgestWord;
+// }
+
+// document.write(findString("Web Developeer Tutorial"))
+
+
+
+
+
+//  QUESTION NO 13
+
+// match /\ word ki location btata
+
+// function counting(str,letter)
+//  {
+//     const count = (str.match(new RegExp(letter, 'g')) || []).length;
+
+
+//     return count;
+// }
+
+// console.log(counting('JSResourceS.com', 'o'));
+// console.log(counting('hello world', 'l'));
+
+
+
+// Question no 14 
+
+
+// function calCircumference(radius){
+//     let calCircumference = 2 * Math.PI*radius
+//     console.log(`the circumference is ${calCircumference.toFixed(2)}`)
+// }
+// function calArea (radius){
+//     let area = Math.PI * radius ** 2
+//     console.log(`the area is ${area.toFixed(3)}`) 
+
+// }
+
+// calCircumference(5)
+// calArea(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
