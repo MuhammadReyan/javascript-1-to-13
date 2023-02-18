@@ -730,6 +730,183 @@ console.log(e)
 //     console.log(studentNames3[i] + ": Score = " + numbers[i] + ", Percentage = " + studentPercentages[i] + "%");
 // }
 
+//  Question No 9
+
+// initlize a Array ==============start=============
+
+
+// let colors = ["red", "green", "blue", "yellow", "orange",]
+
+// document.write(colors)
+
+// add begining array
+
+// ==============A=============
+
+// let colorToAdd = prompt("type array in the beginning")
+// colors.unshift(colorToAdd)
+// document.write("<br> update and add in the beginning array check " + colors)
+
+// ==============B=============
+// let colorToAddEnd = prompt("type array add in end")
+// colors.push(colorToAddEnd)
+// document.write("<br> update and add in end array check " + colors)
+
+//  add two more array
+// ==============C=============
+// colors.unshift("pink", "black")
+
+// document.write("<br> add two more array " + colors)
+
+// delete first Array
+// ==============D=============
+// colors.shift()
+// document.write("<br> delete first array " + colors)
+
+// delete end array
+// ==============E=============
+// colors.pop()
+// document.write("<br> delete end array " + colors)
+
+
+
+
+// f. Ask the user at which index he/she wants to add a color & color name. Then add the color to desired position/index:
+
+
+// let index = prompt("Enter the index at which you want to add a color:")
+// let colorToAdd = prompt("Enter a color to add at the specified index:")
+// colors.splice(index, 0, colorToAdd)
+// document.write("<br> after adding specific index" + colors)
+
+
+
+// g. Ask the user at which index he/she wants to delete color(s) & how many colors he/she wants to delete. Then remove the specified colors:
+
+// let index = prompt("Enter the index at which you want to delete color(s):");
+// let numberOfColorsToDelete = prompt("Enter the number of colors to delete:");
+// colors.splice(index, numberOfColorsToDelete);
+// document.write("<br>Updated array after deleting colors from the specified index: " + colors);
+
+
+//  QUESTION NO 11
+
+// let cities = [" Karachi ", " Hyderbad ", " Quetta ", " Peshawar ", " Lahore "]
+
+// let selectedCities = []
+
+// selectedCities = cities.slice(0, 3)
+
+// document.write("Cities" + cities + "<br>")
+// document.write("Selected Cities" + selectedCities)
+
+//  QUESTION NO 12
+
+
+// let arr = ["This", "is", "my", "cat"];
+// let str = arr.join(" ");
+
+// document.write(str);
+
+
+//  QUESTION NO 13
+
+
+// let fruit = [];
+
+// // Add values to the end of the array
+// fruit.push("Apple");
+// fruit.push("Banna");
+// fruit.push("Orange");
+
+// // Remove values from the beginning of the array
+// let first = fruit.shift();
+// let second = fruit.shift();
+// let third = fruit.shift();
+
+// // Display the removed values in the console
+
+// console.log(first)
+// console.log(second)
+// console.log(third)
+
+//  QUESTION NO 14
+
+
+// let last = [];
+
+// // Add values to the end of the array
+
+// last.push(1);
+// last.push(2);
+// last.push(3);
+
+// // Remove values from the last of the array
+
+// let lastvalue = last.pop();
+// console.log(lastvalue)
+
+
+// let second = last.pop();
+// console.log(second)
+
+
+// let third = last.pop();
+// console.log(third)
+
+
+
+
+// QUESTION NO 15
+
+
+// const phoneManufacturers = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+
+// document.write('<select>');
+// document.write(`<option value="${phoneManufacturers[0]}">${phoneManufacturers[0]}</option>`);
+// document.write(`<option value="${phoneManufacturers[1]}">${phoneManufacturers[1]}</option>`);
+// document.write(`<option value="${phoneManufacturers[2]}">${phoneManufacturers[2]}</option>`);
+// document.write(`<option value="${phoneManufacturers[3]}">${phoneManufacturers[3]}</option>`);
+// document.write(`<option value="${phoneManufacturers[4]}">${phoneManufacturers[4]}</option>`);
+// document.write(`<option value="${phoneManufacturers[5]}">${phoneManufacturers[5]}</option>`);
+// document.write('</select>');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //  FUNCTION 35 TO 38 CHAPTER
 
 //  QUESTION NO 1
@@ -935,7 +1112,7 @@ console.log(e)
 
 
 
-// Question no 14 
+// Question no 14
 
 
 // function calCircumference(radius){
@@ -944,7 +1121,7 @@ console.log(e)
 // }
 // function calArea (radius){
 //     let area = Math.PI * radius ** 2
-//     console.log(`the area is ${area.toFixed(3)}`) 
+//     console.log(`the area is ${area.toFixed(3)}`)
 
 // }
 
@@ -973,18 +1150,9 @@ console.log(e)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+const number= [1,2,3,4,5]
+number.push(number.pop())
+console.log(number)
 
 
 
