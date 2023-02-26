@@ -652,24 +652,6 @@ console.log(e)
 // }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //  Question 6
 
 // var greeting;
@@ -679,6 +661,83 @@ console.log(e)
 // } else {
 // alert(greeting = "Good evening" );
 // }
+
+
+
+
+// QUESTION NO 9
+
+
+// let leapYear = +prompt("Enter the year")
+
+// if (leapYear % 100 !== 0 && leapYear % 4 == 0 || leapYear % 400 == 400) {
+//     console.log(`${leapYear} is a leap year`)
+// } else {
+//     console.log(`${leapYear} is no leap year`)
+// }
+
+
+
+
+
+
+
+
+//  QUESTION NO 15
+// Ask the user what the current hour is. If the hour is between 
+// 6 and 9 a.m., tell the user, "Breakfast is served." If the hour is 
+// between 11 a.m. and 1 p.m., tell the user, "Time for lunch." If 
+// the hour is between 5 and 8 p.m., tell the user, "It's dinner 
+// time." For any other hours, tell the user, "Sorry, you'll have to 
+// wait, or go get a snack." (Hint: Store the hour in 24 hours clock 
+// format i.e. 14 for 2pm , 15 for 3pm) u
+
+
+// let currentHour = parseInt(prompt("Enter the current hour (in 24-hour format):"));;
+
+// if (currentHour >= 6 && currentHour < 9) {
+//     console.log("Breakfast is served.");
+// } else if (currentHour >= 11 && currentHour < 13) {
+//     console.log("Time for lunch.");
+// } else if (currentHour >= 17 && currentHour < 20) {
+//     console.log("It's dinner time.");
+// } else {
+//     console.log("Sorry, you'll have to wait, or go get a snack.");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //  CHAPTER 14 AND 15 ARRAY
 
@@ -748,6 +807,7 @@ console.log(e)
 // document.write("<br> update and add in the beginning array check " + colors)
 
 // ==============B=============
+
 // let colorToAddEnd = prompt("type array add in end")
 // colors.push(colorToAddEnd)
 // document.write("<br> update and add in end array check " + colors)
@@ -787,6 +847,81 @@ console.log(e)
 // let numberOfColorsToDelete = prompt("Enter the number of colors to delete:");
 // colors.splice(index, numberOfColorsToDelete);
 // document.write("<br>Updated array after deleting colors from the specified index: " + colors);
+
+
+
+
+//  QUESTION NO 9
+
+
+// let moives = []
+
+
+// moives.push(" 1) Avenger: Age OF Ultron <br>")
+// moives.push(" 2) Specture <br>")
+// moives.push(" 3) Jurassic World <br>")
+// moives.push(" 4) Inside Out <br>")
+
+
+// document.write(moives + "<br>")
+// document.write("Length of array " + moives.length)
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  QUESTION NO 10
+
+
+
+// Declare and initialize an array with some favorite cars
+
+// const favoriteCars = ["Tesla Model S", "Audi R8", "Porsche 911", "BMW M3"];
+
+// // Get the first index of the array
+
+// const firstIndex = 0;
+
+// // Get the car at the first index of the array
+
+// const carAtFirstIndex = favoriteCars[firstIndex];
+
+// // Get the last index of the array
+
+// const lastIndex = favoriteCars.length - 1;
+
+// // Get the car at the last index of the array
+
+// const carAtLastIndex = favoriteCars[lastIndex];
+
+// // Print the results
+// console.log("First index of the array: " + firstIndex);
+// console.log("Car at first index of the array: " + carAtFirstIndex);
+// console.log("Last index of the array: " + lastIndex);
+// console.log("Car at last index of the array: " + carAtLastIndex);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //  QUESTION NO 11
@@ -829,6 +964,35 @@ console.log(e)
 // console.log(first)
 // console.log(second)
 // console.log(third)
+
+
+
+//      Question no 13
+
+// const studentScore = [320, 230, 480, 120]
+
+// document.write(`Scoren Of Student : ${studentScore}<br> `);
+
+// const scoreSort = studentScore.sort()
+// document.write(`Ordered Score Of student :${scoreSort} <br>`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //  QUESTION NO 14
 
@@ -1130,6 +1294,614 @@ console.log(e)
 
 
 
+//             OBJECT ASSINGMENT
+
+// Q1: Write a program to create basic object structure (Object Name = “Student”)?
+// Q2: Write a program to create student Object and use properties that are as given
+// name = “ABS Student” ;
+// age = 20;
+// student_Id = 420 ;
+
+// Show Student Properties in alert box
+
+
+// var obj = {
+//     name: "ABS Student",
+//     age: 20,
+//     student_Id: 420
+// }
+// alert(obj.name)
+// alert(obj.age)
+// alert(obj.student_Id)
+
+// Q3: Write a program to create student bio data, following fields use in Student Object
+// (First Name, Last Name, Age, ID, Contact #, Father Name, Residential Address)
+
+
+// let studentObject = {
+//     firstName: "Reyan",
+//     lastName: "Javed",
+//     age: 19,
+//     iD: 4240112345678,
+//     contact: 0312300445656,
+//     fatherName: "Muhammad Javed",
+//     residentalAddress: "Gulshan Iqbal Karachi"
+// }
+
+// console.log(studentObject)
+
+
+// Q4: Write a program to create student mark sheet, use following fields in Object
+
+
+// let marksheet = {
+//     Student_Name: "Reyan",
+//     Student_ID: 1001223446,
+//     Subject_HTML: 80,
+//     Student_CSS: 90,
+//     Student_JAVASCRIPT: 90,
+//     Student_BOOTSTRAP: 70,
+//     Total_Marks: 400
+// }
+
+// console.log(marksheet)
+
+
+// Q5: Write a program to check if student is eligible for Module A class, following fields use in Student Object
+
+
+
+
+// let studentObject = {
+//     student_Name: "Zia Khan",
+//     student_Age: 20
+// }
+// let studentAge = {
+//     studentCheckAge: +prompt("Type your age for check Module A class")
+// }
+// if (studentObject.student_Age < studentAge.studentCheckAge) {
+//     alert("Student are not eligible for Module A classes ")
+
+// } else if (studentObject.student_Age > studentAge.studentCheckAge) {
+//     alert("Student are  eligible for Module A classes ")
+
+// } else {
+//     alert("Please Type Age in Numbers")
+// }
+
+
+//  QNO 6  Write a program to create two student Mark sheet, and check the conditions as given in question
+
+// Student_One
+// {
+// Student_Name : “Zia Khan”,
+// Student_ID : =J30052425300,
+// Subject_HTML : 80,
+// Student_CSS : 90,
+// Student_JAVASCRIPT : 90,
+// Student_BOOTSTRAP :  70,
+// Total_Marks : 400
+//  }
+// Student_Two
+
+// {
+// Student_Name : “Zia Khan”,
+// Student_ID : =J30052425300,
+// Subject_HTML : 60,
+// Student_CSS : 70,
+// Student_JAVASCRIPT : 65,
+// Student_BOOTSTRAP :  85,
+// Total_Marks : 400
+//  }
+
+// Show the percentage for both and check the condition, if Student_One’s percentage > Student_Two then eligible for scholarship
+
+
+
+// let studentOne = {
+//     student_Name: "“Zia Khan”",
+//     student_ID: 30052425300,
+//     subject_Html: 80,
+//     student_Css: 90,
+//     student_Javascript: 90,
+//     student_Bootstrap: 70,
+//     total_Marks: 400,
+
+// };
+
+// let studentTwo = {
+//     student_Name: "“Ali Khan”",
+//     student_Id: 30052425300,
+//     subject_Html: 60,
+//     student_Css: 70,
+//     student_Js: 65,
+//     student_Bootstrap: 85,
+//     total_Marks: 400,
+
+// };
+
+
+
+// let percentageOne = ().toFixed(2)
+// let percentageTwo = (studentTwo.total_Marks / 4).toFixed(2)
+
+
+// console.log(`Student One percentage is ${percentageOne}`)
+// console.log(`Student Two percentage is ${percentageTwo}`)
+
+
+
+// Q7: Write a program to create student object and insert data through prompt, then show values in alert box
+// Use following properties in object
+
+// Name
+// Age
+// Address
+
+// And after show the data in alert box?
+
+// let studentObject = {
+
+//     name: prompt("Type Your Name Here"),
+//     age: +prompt("Type Your Age In Number"),
+//     address: prompt("Type Your Address Here"),
+// };
+// alert(`${studentObject.name} \n ${studentObject.age} \n  ${studentObject.address} `)
+
+
+// Q8: Write a program to take user input and create student mark sheet?
+
+// Student_Name : user input,
+// Student_ID : user input,
+// Subject_HTML : user input,
+// Student_CSS : user input,
+// Student_JAVASCRIPT : user input,
+// Student_BOOTSTRAP :  user input,
+// Total_Marks : user input
+
+
+// let createStudentMarkSheet = {
+//     student_Name: prompt("Type Your Name"),
+//     student_Id: +prompt("Type Your ID Number"),
+//     subject_Html: +prompt("Type Your HTML Mark"),
+//     student_Css: +prompt("Type Your CSS Number"),
+//     student_Javascript: +prompt("Type Your JAVASCRIPT Number"),
+//     student_Bootstrap: +prompt("Type Your BOOTSTRAP Number"),
+//     total_Mark: +prompt("Type Your TOTAL MARKS"),
+
+// };
+// alert(` STUDENT NAME : ${createStudentMarkSheet.student_Name}\n  STUDENT ID : ${createStudentMarkSheet.student_Id} \n
+//   STUDENT HTML :  ${createStudentMarkSheet.subject_Html} \n STUDENT CSS ${createStudentMarkSheet.student_Css} \n STUDENT JAVASCRIPT  ${createStudentMarkSheet.student_Javascript} \n STUDENT BOOTSTRAP  ${createStudentMarkSheet.student_Bootstrap} \n TOTAL MARKS : ${createStudentMarkSheet.total_Mark} `)
+
+
+
+//  CHAPTER NO 18 20 FOR LOOP
+
+// 1. Write a program to display the message “Hello World” 5 times
+// in your browser using for loop
+
+// let i = "HELLO WORLD"
+
+// for (let index = 0; index < 5; index++) {
+//   document.write("HELLO WORLD <br>")
+// }
+
+
+// 2. Write a program to print numeric counting from 1 to 10.
+
+// for (let i = 1; i < 11; i++) {
+//     console.log(i)
+// }
+
+// 3Write a program to print multiplication table of any number
+// using for loop. Table number & length should be taken as an
+// input from user
+
+
+// Taking input from the user for the number and the length of the table
+
+// let num = parseInt(prompt("Enter a number: "));
+// let length = parseInt(prompt("Enter the length of the table:"));
+
+// // Printing the multiplication table using a for loop
+
+// document.write(`Multiplication Table of ${num} with length ${length}:  <br>`);
+// for (let i = 1; i <= length; i++) {
+//     document.write(`${num} x ${i} = ${num * i} <br>`);
+// }
+
+//          Question no 4     4. You have an array
+//A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”]
+// Write each element on new line with the help of for loop
+
+
+// let a = ["Nokia", "Samsung", "Apple", "Sony", "Huawei"];
+
+// for (let i = 0; i < a.length; i++) {
+//     document.write(`${a[i]}<br>`)
+// }
+
+//     QUESTION 5
+// 5. Write a program to print items of the following array using for
+// loop:
+// fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”]
+
+
+// let fruits = ["apple",  "banana", "mango" , "orange", "strawberry"]
+
+// for (let i = 0; i < fruits.length; i++) {
+
+//     console.log(fruits[i])
+
+//     document.write(`Element at index${i} is ${fruits[i]}<br> `)
+// }
+
+
+// 6. Write a program to initialize an array of N items by using
+// prompt. Where N is number of items as entered by the user
+
+
+// let n = prompt("Enter the number of items in the array :")
+
+
+// let array = [];
+// for (let i = 0; i < n; i++) {
+//     let item = prompt(`Enter item ${i + 1}`);
+//     array.push(`${item}<br>`)
+// }
+// document.write(`${array}`)
+
+
+//  QUESTION NO 7
+
+// Generate the following series in your browser. See example
+// output.
+// a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+// b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+// c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+// d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+// e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
+
+
+
+
+// let counting = " ";
+
+// for (let i = 1; i < 16; i++) {
+//     counting += i + ", "
+// }
+// document.write("<h4> Counting : " + counting.slice(0, -2) + "</h4>")
+
+
+// let reversecounting = " ";
+
+// for (let i = 10; i >= 1; i--) {
+//     reversecounting += i + ", "
+// }
+// document.write("<h4> Reverse Counting : " + reversecounting.slice(0, -2) + "</h4>")
+
+// Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+
+// for (var i = 1; i <= 20; i++) {
+//     if (i % 2 == 0) {
+//         document.write(i + "<br>")
+//     }
+// }
+
+// // Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+
+// for (let i = 0; i <= 19; i++) {
+//     if (i % 2 != 0) {
+//         document.write(i + "<br>")
+//     }
+// }
+
+
+// // Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
+// let series = "";
+// for (let i = 1; i <= 10; i++) {
+//     series += (2 * i) + "k, ";
+// }
+// document.write("<p>Series: " + series + "</p>");
+
+
+
+// 8. You have an array
+// A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an array.
+// After searching, prompt the user whether the given item is
+// found in the list or not. Example:
+
+
+// let mart = ["Cake", "Apple", "Cookie", "Chips", "Patties"];
+// let client = prompt("Which Product You Want To Be Buy");
+
+// let flag;
+
+// let boxNumber;
+
+// for (let i = 0; i < mart.length; i++) {
+//     if (client === mart[i]) {
+//         flag = true
+//         boxNumber = i
+
+//     }
+// }
+// if (flag) {
+
+//     document.write(`Yes This Product is <strong>${client}</strong> Avaiable In My Mart.`)
+
+// } else {
+//     document.write("This Product Is Not Avaiable  ")
+// }
+
+//            QUESTION NO 9
+
+// 9. Write a program to identify the largest number in the given
+// array.
+// A = [24, 53, 78, 91, 12]
+
+
+// const a = [
+//     24, 53, 78, 91, 21
+// ]
+
+// let largest = [+prompt("Type Number")]
+
+
+// for (let i = 1; i < a.length; i++) {
+//     if (a[i] >largest) {
+//         largest = a[i]
+//     }
+// }
+
+// document.write(`The largest number in the array is : ${largest}`)
+
+
+
+//  QUESTION 10
+
+// 10. Write a program to identify the smallest number in the given
+// array.
+// A = [24, 53, 78, 91, 12]
+
+// const a = [
+//     24, 53, 78, 91, 21
+// ]
+
+// let largest = [+prompt("Type Number")]
+
+
+// for (let i = 1; i < a.length; i++) {
+//     if (a[i] < largest) {
+//         largest = a[i]
+//     }
+// }
+
+// document.write(`The Smallest number in the array is : ${largest}`)
+
+
+
+//        Question NO 11
+
+// Write a program to identify the largest & the smallest
+// number in the given array.
+// A = [24, 53, 78, 91, 12]
+
+// const a = [
+//     24, 53, 78, 91, 21
+// ]
+
+// let largest = [+prompt("Type Number"),]
+// let smallest = [+prompt("Type Second Number")]
+
+
+// for (let i = 1; i < a.length; i++) {
+//     if (a[i] > largest) {
+//         largest = a[i]
+//     } else if (a[i] < smallest) {
+//         smallest = a[i]
+//     }
+// }
+
+// document.write(`The Largest Number in the array is : ${largest} `)
+// document.write(`The Smallest number in the array is : ${smallest} <br>`)
+
+
+
+// 12. Write a program to print multiples of 5 ranging 1 to 100
+
+
+// for (var i = 1; i <= 100; i++) {
+//     if (i % 5 == 0) {
+//         document.write(i + "<br>")
+//     }
+// }
+
+
+//           QUESTION 13
+
+// You have given the following arrays:
+// var students = ["Ali", "Sami", "Taha", "Inam"];
+// var scores = [58, 73, 89, 90];
+
+// Write a program to generate the following HTML table in your
+// browser using JS.
+
+
+
+// let students = ["Ali", "Sami", "Taha", "Inam"];
+// let scores = [58, 73, 89, 90]
+
+
+
+// let html = "<table><tr><th>Students</th> <th>Score</th></tr><table>"
+
+
+// for (let i = 0; i < students.length; i++) {
+//     html += "<tr> <td>" + students[i] + "</td> <td>" + scores[i] + "</td> </tr>"
+// }
+// html += "</table>"
+
+// document.write(html)
+
+
+
+//             Question no 14
+
+// Write a program that prints number from start of the array
+// to desired stop value. Given array:
+// var scores = [12, 45, 3, 22, 34, 50];
+// (Hint: take stop value from user)
+// E.g. if user gives 3 as input value print 12, 45, 3
+// if user gives 34 as input value print 12, 45, 3, 22, 34
+
+
+// Define the scores array
+// const scores = [12, 45, 3, 22, 34, 50];
+
+// // Get the stop value from the user
+// const stop = parseInt(prompt("Enter the stop value:"));
+
+// // Loop through the scores array and print each number until the stop value is reached
+// for(let i = 0; i < scores.length && scores[i] <= stop; i++) {
+//   console.log(scores[i]);
+// }
+
+//  QUESTION NO 15
+
+// You have an array
+// A = [ [1,2,3] , [4,5,6] , [7,8,9] ]
+// Write each element on new line with the help of nested for
+// loops.
+
+
+// let a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+
+// for (let i = 0; i < a.length; i++) {
+//     for (let b = 0; b < a[i].length; b++) {
+//         console.log(a[i][b])
+//     }
+// }
+
+// QUESTION NO 16
+
+// Write a program to repeatedly print the value of the variable
+// num which is input by user. Value should be decreasing by 0.5
+// each time, as long as x Value remains positive.
+
+// let num = parseFloat(prompt("Type Number"));
+
+
+
+// for (let i = num; i > 0; i -= 0.5) {
+
+//     document.write(i)
+// }
+
+//  QUESTION NO 17
+
+// The even/odd reporter
+// Write a for loop that will iterate from 0 to 20. For each
+// iteration, it will check if the current number is even or odd, and
+// report that to the screen (e.g. "2 is even").
+
+
+
+// for (let i = 0; i <= 20; i++) {
+
+//     if (i % 2 === 0) {
+//         console.log(i + " Even")
+//     } else {
+//         console.log(i + " Odd")
+//     }
+// }
+
+
+//  QUESTION NO 18
+
+// let product = 1;
+
+// for (let i = 1; i <= 7; i++) {
+//     if (i % 2 === 0) {
+//         product *= i
+//     }
+// }
+
+// console.log(`Product of odd integers from 1 to 7: ${product}`);
+
+
+
+//          QUESTION 19
+
+
+// 9. Write a program that will write out a wedge of stars. The user
+// will enter the initial number of stars, and the program will write
+// out lines of stars where each line has one few star than the
+// previous line. Initial number of stars: 7
+
+
+
+
+// let numStar = parseInt(prompt("Type Number"));
+
+// for (let i = numStar; i >= 1; i--) {
+//     let stars = " ";
+//     for (let j = 0; j < i; j++) {
+//         stars += "*"
+//     }
+
+//     document.write(stars)
+// }
+
+
+//  QUESTION  MO 20
+
+// Write a program to create the following patterns in your
+// browser. Take number of lines as an input
+
+
+
+
+
+// Prompt the user to enter the number of lines
+// let numLines = parseInt(prompt("Enter the number of lines: "));
+
+// // Pattern 1
+// for (let i = 1; i <= numLines; i++) {
+//     let stars = "";
+//     for (let j = 0; j < i; j++) {
+//         stars += "*";
+//     }
+//     console.log(stars);
+// }
+
+// // Pattern 2
+// for (let i = 1; i <= numLines; i++) {
+//     let spaces = "";
+//     let stars = "";
+//     for (let j = 1; j <= (numLines - i); j++) {
+//         spaces += " ";
+//     }
+//     for (let k = 1; k <= i; k++) {
+//         stars += "*";
+//     }
+//     console.log(spaces + stars);
+// }
+
+// // Pattern 3
+// for (let i = numLines; i >= 1; i--) {
+//     let spaces = "";
+//     let stars = "";
+//     for (let j = 1; j <= (numLines - i); j++) {
+//         spaces += " ";
+//     }
+//     for (let k = 1; k <= i; k++) {
+//         stars += "*";
+//     }
+//     console.log(spaces + stars);
+// }
 
 
 
@@ -1150,9 +1922,6 @@ console.log(e)
 
 
 
-const number= [1,2,3,4,5]
-number.push(number.pop())
-console.log(number)
 
 
 
@@ -1171,6 +1940,29 @@ console.log(number)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// x = 5
+
+// x += x + 5
+
+// console.log(x)
 
 
 
