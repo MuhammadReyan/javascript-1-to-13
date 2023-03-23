@@ -684,12 +684,12 @@ console.log(e)
 
 
 //  QUESTION NO 15
-// Ask the user what the current hour is. If the hour is between 
-// 6 and 9 a.m., tell the user, "Breakfast is served." If the hour is 
-// between 11 a.m. and 1 p.m., tell the user, "Time for lunch." If 
-// the hour is between 5 and 8 p.m., tell the user, "It's dinner 
-// time." For any other hours, tell the user, "Sorry, you'll have to 
-// wait, or go get a snack." (Hint: Store the hour in 24 hours clock 
+// Ask the user what the current hour is. If the hour is between
+// 6 and 9 a.m., tell the user, "Breakfast is served." If the hour is
+// between 11 a.m. and 1 p.m., tell the user, "Time for lunch." If
+// the hour is between 5 and 8 p.m., tell the user, "It's dinner
+// time." For any other hours, tell the user, "Sorry, you'll have to
+// wait, or go get a snack." (Hint: Store the hour in 24 hours clock
 // format i.e. 14 for 2pm , 15 for 3pm) u
 
 
@@ -1902,6 +1902,570 @@ console.log(e)
 //     }
 //     console.log(spaces + stars);
 // }
+
+
+
+
+//                            CHAPTER NO 21 25 STRING METHODS
+
+// 1. Write a program that takes two user inputs for first and
+// last name using prompt and merge them in a new variable
+// titled fullName. Greet the user using his full name.
+
+// let fullName = prompt("Type Your First Name")
+
+// let lastName = prompt("Type Your Last Name")
+
+// document.write(`${fullName} ${lastName} `)
+
+// 2. Write a program to take a user input about his favorite
+// mobile phone model. Find and display the length of user
+// input in your browser
+
+
+
+// let userInput = prompt("Type Your Favorite mobile phone model ")
+
+// document.write(`My Favorite Phone is : ${userInput} <br> Length of string ${userInput.length}`)
+
+
+// 3. Write a program to find the index of letter “n” in the word
+// “Pakistani” and display the result in your browser .
+
+
+// let find = "Pakistani";
+// let word = find.indexOf('n')
+
+// document.write(" String :" + find + "<br>" + "Index Of  :" + word)
+
+// 4. Write a program to find the last index of letter “l” in the
+// word “Hello World” and display the result in your browser.
+
+
+
+// let strign = "Hello World"
+
+// let word = strign.lastIndexOf('l')
+
+// document.write(" String :" + strign + "<br>" + "Index Of  :" + word)
+
+
+// 5. Write a program to find the character at 3rd index in the
+// word “Pakistani” and display the result in your browser.
+
+
+// let string = "Pakistani"
+
+// let word = string.charAt(3)
+
+
+// document.write("String : " + string + "<br>" + "Character at index 3 :" + word)
+
+// 6. Repeat Q1 using string concat() method
+
+
+// let fullName = prompt("Type Your First Name")
+
+// let lastName = prompt("Type Your Last Name")
+
+// document.write(fullName.concat(lastName))
+
+// 7. Write a program to replace the “Hyder” to “Islam” in the
+// word “Hyderabad” and display the result in your browser
+
+
+// let city = "Hyderabad"
+// let replace = city.replace('Hyderabad', 'Islamabad')
+// document.write("city :" + city + "<br>" + "After Replacement :" + replace)
+
+
+
+
+// 8. Write a program to replace all occurrences of “and” in the
+// string with “&” and display the result in your browser.
+// var message = “Ali and Sami are best friends. They play cricket and
+// football together.”;
+
+
+// var message = "Ali and Sami are best friends They play cricket and football together";
+
+// let replace = message.replace(/and/g,"&")
+
+// document.write(replace)
+
+// 9. Write a program that converts a string “472” to a number
+// 472. Display the values & types in your browser.
+
+
+
+// let num = " '472'"
+
+// document.write("Value :" + num + "<br> " + "Type : " + typeof (num) + "<br>")
+// let number = 472
+
+// document.write("Value :" + number + "<br> " + "Type : " + typeof (number))
+
+
+// 10. Write a program that takes user input. Convert and
+// show the input in capital letters.
+
+
+// let message = "hello"
+
+// let reached = message.toUpperCase('hello')
+
+// document.write(" Before Case :" + message + "<br>" + "After Case : " + reached)
+
+// 11. Write a program that takes user input. Convert and
+// show the input in title case.
+
+
+// let userInput = prompt("Enter a sentence: ");
+// let titleCase = userInput.toLowerCase().replace(/(^|\s)\S/g, function(firstLetter) { 
+//   return firstLetter.toUpperCase(); 
+// });
+
+// document.write("Title case: ", titleCase);
+
+
+
+
+// 12. Write a program that converts the variable num to
+// string.
+// var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+
+// let num = 35.36
+
+// let str = num.toString().replace(".", " ")
+
+
+// document.write("Number :" + num + "<br>" + "Result :" + str )
+
+
+// 13. Write a program to take user input and store username
+// in a variable. If the username contains any special symbol
+// among [@ . , !], prompt the user to enter a valid username.
+// For character codes of [@ .
+// Note:
+// ASCII code of ! is 33
+// ASCII code of , is 44
+// ASCII code of . is 46
+// ASCII code of @ is 64
+
+
+
+// let userInput = prompt("Type your username")
+
+// if (userInput.includes(",") || userInput.includes(".") || userInput.includes("@") || userInput.includes("!")) {
+//     alert('Please enter a valid username without special symbols [@ . , !]')
+// } else {
+//     alert("Username accepted: " + userInput);
+// }
+
+14   // You have an array
+// A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an
+// array. After searching, prompt the user whether the given
+// item is found in the list or not.
+// Note: Perform case insensitive search. Whether the user
+// enters cookie, Cookie, COOKIE or coOkIE, program
+// should inform about its availability.
+
+
+
+
+// let a = ["cake", "patties", "apple pie", "cookie", "chips"]
+
+// let userInput = prompt("Enter an item to search for :").toLowerCase()
+// let b = a.includes(userInput)
+
+// if (b) {
+//     alert(userInput + " is available at index :" + a.indexOf(userInput))
+// } else {
+//     alert(`The item '${userInput}' was not found in the array.`)
+// }
+
+// 15.  Write a program to take password as an input from
+// user. The password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements,
+// prompt the user to enter a valid password.
+// For character codes of a-z, A-Z & 0-9, refer to ASCII
+// table at the end of this document.
+
+
+
+
+// let password = prompt("Enter your password");
+
+// while (!isValidPassword(password)) {
+//   password = prompt("Password must be at least 6 characters long, should contain alphabets and numbers, and should not start with a number. Please enter a valid password.");
+// }
+
+// console.log("Valid password!");
+
+// function isValidPassword(password) {
+//   return password.length >= 6 && /^[a-zA-Z][a-zA-Z0-9]*$/.test(password);
+// }
+
+
+// 16. Write a program to convert the following string to an
+// array using string split method.
+// var university = “University of Karachi”;
+// Display the elements of array in your browser.
+
+// let university = "University Of Karachi";
+
+
+// let split = university.split("")
+
+// for (let i = 0; i < split.length; i++) {
+//     document.write(split[i] + "<br>")
+// }
+//  17.  Write a program to display the last character of a user input.
+
+// let product = prompt("Enter")
+
+// let yes = product.charAt(product.length - 1)
+
+
+
+// alert(`last character ${yes}`)
+
+
+
+// 18  You have a string “The quick brown fox jumps over the
+// lazy dog”. Write a program to count number of
+// occurrences of word “the” in given string.
+
+
+
+
+// var string = "The quick brown fox jumps over the lazy dog";
+// var count = 0;
+
+// // Split the string into an array of words
+// var words = string.split(" ");
+
+// for (var i = 0; i < words.length; i++) {
+//     if (words[i].toLowerCase() === "the") {
+//       count++;
+//     }
+//   }
+
+//   alert("The word 'the' appears " + count + " times in the string.");
+
+
+//               CHAPTER NO  26 30
+
+
+// 1. Write a program that takes a positive integer from user &
+// display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+
+// let number = 3.45214
+
+// document.write("Number : " + number + "<br>")
+// document.write("Round Of Value " +Math.round(number) + "<br>")
+// document.write("Floor Of Value " + Math.floor(number) +"<br> ")
+// document.write( "Ceil Of Value " + Math.ceil(number) +"<br> ")
+
+
+
+// 2. Write a program that takes a negative floating point
+// number from user & display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+// let number = -3.45214
+
+// document.write("Number : " + number + "<br>")
+// document.write("Round Of Value " +Math.round(number) + "<br>")
+// document.write("Floor Of Value " + Math.floor(number) +"<br> ")
+// document.write( "Ceil Of Value " + Math.ceil(number) +"<br> ")
+
+
+// 3 Write a program that displays the absolute value of a
+// number.
+// E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+// let num = -4
+
+// let absolute = Math.abs(num)
+
+// document.write(`The absolute value of ${num} is : ${absolute}`)
+
+
+// 4. Write a program that simulates a dice using random()
+// method of JS Math class. Display the value of dice in your
+// browser.:
+
+// let num = Math.floor(Math.random() * 6) + 1
+
+
+// document.write(`random number ${num}`)
+
+// 6. Write a program that shows a random number between 1
+// and 100 in your browser
+
+// let num = Math.floor(Math.random() * 100) + 1
+
+
+// document.write(`random number ${num}`)
+
+
+
+// 7. Write a program that asks the user about his weight. Parse
+// the user input and display his weight in your browser.
+// Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+
+
+
+
+// let weight = prompt("Please enter your weight (in kgs or kilograms):");
+
+// // Remove any non-numeric characters from the input
+// // weight = weight.replace(/[^\d.-]/g, '');
+
+// // Display the user's weight in the browser
+// document.write("Your weight is: " + weight + " kgs");
+
+
+
+// 8 Write a program that stores a random secret number from
+// 1 to 10 in a variable. Ask the user to input a number
+// between 1 and 10. If the user input equals the secret
+// number, congratulate the user.
+
+
+// let secretNumber = Math.floor(Math.random() * 10) + 1;
+
+// // Ask the user to input a number
+// let userNumber = prompt("Guess the secret number (between 1 and 10):");
+
+// // Parse the user's input as an integer
+// userNumber = parseInt(userNumber);
+
+// // Check if the user's input matches the secret number
+// if (userNumber === secretNumber) {
+//   document.write("Congratulations! You guessed the secret number.");
+// } else {
+//   document.write("Sorry, the secret number was " + secretNumber + ". Try again!");
+// }
+
+
+//                      CHAPTER NO 31 TO 34 Date Method
+
+
+// 1. Write a program that displays current date and time in  your browser.
+
+// let date = new Date()
+// document.write(date)
+
+// 2. Write a program that alerts the current month in words.
+// For example December.
+//3. Write a program that alerts the first 3 letters of the current
+// day, for example if today is Sunday then alert will show
+// Sun. //
+
+// const d = new Date();
+
+// const b = d.getMonth()
+// const c = d.getDay()
+
+// document.write("Current Month is :" + getMonth(b) + "<br>")
+// document.write("Today is :" + getday(c))
+
+
+// function getMonth(monthNumber) {
+//     let month = ["Jan", "Feb", "Mar", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+//     return month[monthNumber]
+// }
+
+// function getday(monthday) {
+//     let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+//     if (c == "Sunday" && c == "Saturday") {
+//         return c = "Funday"
+//     }
+
+//     return day[monthday]
+// }
+
+// 4. Write a program that displays a message “It’s Fun day” if
+// its Saturday or Sunday today.//
+
+// let funday = new Date();
+
+// if (funday.getDay() == 6 || funday.getDay() == 0) {
+
+//     alert("its funday bro")
+// } else {
+//     alert("Its not funday bro")
+// }
+
+// 5. Write a program that shows the message “First fifteen
+// days of the month” if the date is less than 16th of the month
+// else shows “Last days of the month”.
+
+// let day = new Date()
+// let b = day.getDate()
+
+// if (b < 16) {
+//     alert("First fifteen  days of the month")
+// } else {
+//     alert("Last days of the month")
+// }
+
+// 6. Write a program that determines the minutes since
+// midnight, Jan. 1, 1970 and assigns it to a variable that
+// hasn't been declared beforehand. Use any variable you like
+// to represent the Date object.
+
+// let now = new Date();
+
+// // get the number of milliseconds since Jan. 1, 1970
+// let millisecondsSinceEpoch = now.getTime();
+
+// // convert milliseconds to minutes
+// let minutesSinceEpoch = Math.floor(millisecondsSinceEpoch / 60000);
+
+// // display the result
+// console.log(minutesSinceEpoch);
+
+
+
+
+// 7 .Write a program that tests whether it's before noon and
+// alert “Its AM” else “its PM”.
+
+// let now = new Date()
+
+// let time = now.getHours()
+
+// if (time < 12) {
+//     alert("Its AM")
+
+// } else {
+//     alert("Its PM")
+// }
+
+
+// 8 Write a program that creates a Date object for the last day
+// of the last month of 2020 and assigns it to variable named
+// laterDate.
+
+// let date = new Date("2021-01-01");
+
+// // set the date to the last day of the previous month
+// date.setMonth(date.getMonth() - 1);
+// date.setDate(0);
+
+// // assign the date to a variable named laterDate
+// let laterDate = date;
+
+// // display the result
+// console.log(laterDate);
+
+
+//  9 Create a date object of the starting date of this Ramadan 
+// and alert the number of days past since 1st Ramadan?
+// Note: 1st Ramadan was on June 18, 2015
+// let startingDate = new Date("June 18 2015")
+
+// let currentDate = new Date()
+
+
+// let timeDiff = currentDate.getTime() - startingDate.getTime()
+
+// let dayDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24))
+
+// document.write('Number of days past since 1st Ramadan: ' + dayDiff)
+
+// 10. Write a program that displays in your browser the 
+// seconds that elapsed between the reference date and the 
+// beginning of 2015.
+
+// let referenceDate = new Date('March 23, 2023');
+
+// // Set the beginning of 2015 as the target date
+// let targetDate = new Date('January 1, 2015');
+
+// // Calculate the time difference between the two dates in seconds
+// let timeDiffInSeconds = Math.floor((referenceDate.getTime() - targetDate.getTime()) / 1000);
+
+// // Display the time difference in seconds in the browser
+
+
+// document.write(`The number of seconds that have elapsed between the reference date and the beginning of 2015 is: ${timeDiffInSeconds} seconds.`);
+
+
+
+
+// 11. Create a Date object for the current date and time.
+// Extract the hours, reset the date object an hour ahead and
+// finally display the date object in your browser.
+
+
+// let currentDate = new Date()
+
+// let currentHours = currentDate.getHours()
+
+// currentDate.setHours(currentHours + 1)
+
+// document.write(currentDate)
+
+// 12 Write a program that creates a date object and show the 
+// date in an alert box that is reset to 100 years back?
+
+
+// let current = new Date()
+
+// current.setFullYear(current.getFullYear() - 100)
+
+// alert(current)
+
+
+
+
+// 13 Write a program to ask the user about his age. Calculate 
+// and show his birth year in your browser.
+
+
+// var age = prompt("Enter your age here?");
+
+// var year = new Date().getFullYear();
+
+// var birth = year - age
+
+// document.write(`Your age is : ${age} <br>`)
+// document.write("Your Birth year is : " + birth + ":")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
